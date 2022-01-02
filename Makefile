@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=clash-for-openclash
-PKG_VERSION:=1.8.0
+PKG_VERSION:=1.9.0
 PKG_MAINTAINER:=frainzy1477
 
 ifeq ($(ARCH),mipsel)
@@ -25,7 +25,7 @@ else
 endif
 
 
-PKG_SOURCE_URL:=https://github.com/cielpy/clash/releases/download/v$(PKG_VERSION)/
+PKG_SOURCE_URL:=https://github.com/ekkog/clash/releases/download/v$(PKG_VERSION)/
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_HASH:=skip
 
@@ -37,7 +37,7 @@ define Package/$(PKG_NAME)
 	SUBMENU:=2. Clash
 	TITLE:=A rule-based tunnel in Go.
 	DEPENDS:=
-	URL:=https://github.com/cielpy/clash/
+	URL:=https://github.com/ekkog/clash/
 endef
 
 define Package/$(PKG_NAME)/description
